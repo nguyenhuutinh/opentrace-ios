@@ -17,7 +17,7 @@ class UploadDataStep2VC: UIViewController {
     let uploadFailErrMsg = "Upload failed. Please try again later."
     let invalidPinErrMsg = "Invalid PIN"
 
-    var functions = Functions.functions(region: "asia-east2")
+    var functions = Functions.functions(region: "europe-west1")
     let storageUrl = PlistHelper.getvalueFromInfoPlist(withKey: "FIREBASE_STORAGE_URL") ?? ""
 
     override func viewDidLoad() {

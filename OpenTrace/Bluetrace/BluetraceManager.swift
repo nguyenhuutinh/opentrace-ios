@@ -91,16 +91,21 @@ class BluetraceManager {
     }
 
     func isBluetoothOn() -> Bool {
+        print(centralController.getState())
         switch centralController.getState() {
         case .poweredOff:
             print("Bluetooth is off")
         case .resetting:
+            print("1")
             presentBluetoothAlert("Resetting State")
         case .unauthorized:
+            print("2")
             presentBluetoothAlert("Unauth State")
-        case .unknown:
-            presentBluetoothAlert("Unknown State")
+//        case .unknown:
+//            print("3")
+//            presentBluetoothAlert("Unknown State")
         case .unsupported:
+            print("4")
             centralController.turnOn()
             presentBluetoothAlert("Unsupported State")
         default:

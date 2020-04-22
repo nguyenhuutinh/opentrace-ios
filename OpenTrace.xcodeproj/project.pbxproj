@@ -78,6 +78,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A08F716244EB1BB00BD6780 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0A08F718244EB1BB00BD6780 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		30BE1CA923F108BA005DCE4F /* UploadFileData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadFileData.swift; sourceTree = "<group>"; };
 		30BE1CAC23F119FD005DCE4F /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		30BE1CAE23F1349F005DCE4F /* EncounterRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncounterRecord.swift; sourceTree = "<group>"; };
@@ -166,6 +168,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A08F714244EB1BB00BD6780 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				0A08F715244EB1BB00BD6780 /* PROD */,
+				0A08F717244EB1BB00BD6780 /* STG */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		0A08F715244EB1BB00BD6780 /* PROD */ = {
+			isa = PBXGroup;
+			children = (
+				0A08F716244EB1BB00BD6780 /* GoogleService-Info.plist */,
+			);
+			path = PROD;
+			sourceTree = "<group>";
+		};
+		0A08F717244EB1BB00BD6780 /* STG */ = {
+			isa = PBXGroup;
+			children = (
+				0A08F718244EB1BB00BD6780 /* GoogleService-Info.plist */,
+			);
+			path = STG;
+			sourceTree = "<group>";
+		};
 		0D9425D6D7445931DFFADA80 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -386,6 +413,7 @@
 		5DD41D3923DCB03B00FD4AB0 /* OpenTrace */ = {
 			isa = PBXGroup;
 			children = (
+				0A08F714244EB1BB00BD6780 /* Firebase */,
 				557FD391243E4048006BDF38 /* Core Data */,
 				C585C83923EEB93A0061B7C6 /* UIElements */,
 				5D7DC317243E12A4007180E9 /* Constants */,
@@ -403,7 +431,6 @@
 				5D7DC30D243E0F29007180E9 /* Upload data */,
 				5D7DC30A243E0EAE007180E9 /* Power saver */,
 				5D7DC305243E0D20007180E9 /* Bluetrace */,
-				D885238C24260B2F00E4E4AC /* Firebase */,
 				5DDB85EA23EE39C000B186BC /* Project Bluetrace.entitlements */,
 				D8EB201C23FBE216001C60EC /* help_center_article_style.css */,
 			);
@@ -453,29 +480,6 @@
 				5D7DC334243E5788007180E9 /* Muli-SemiBold.ttf */,
 			);
 			path = Fonts;
-			sourceTree = "<group>";
-		};
-		D885238C24260B2F00E4E4AC /* Firebase */ = {
-			isa = PBXGroup;
-			children = (
-				D885238D24260B2F00E4E4AC /* PROD */,
-				D885238F24260B2F00E4E4AC /* STG */,
-			);
-			path = Firebase;
-			sourceTree = "<group>";
-		};
-		D885238D24260B2F00E4E4AC /* PROD */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = PROD;
-			sourceTree = "<group>";
-		};
-		D885238F24260B2F00E4E4AC /* STG */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = STG;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -879,13 +883,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3C5E7E594E7634084F94F030 /* Pods-OpenTrace.debug.xcconfig */;
 			buildSettings = {
-				BUNDLE_IDENTIFIER = "<insert bundle identifier here>";
+				BUNDLE_IDENTIFIER = com.bvl.opentrace.stage;
 				CODE_SIGN_ENTITLEMENTS = "OpenTrace/Project Bluetrace.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 27;
-				DEVELOPMENT_TEAM = 4CYF853X55;
-				FIREBASE_STORAGE_URL = "<insert firebase storage url here>";
+				DEVELOPMENT_TEAM = 33X8PA8375;
+				FIREBASE_STORAGE_URL = "gs://opentrace-rs-upload";
 				INFOPLIST_FILE = "$(SRCROOT)/OpenTrace/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -895,13 +899,13 @@
 				MARKETING_VERSION = 1.5;
 				ONLY_ACTIVE_ARCH = YES;
 				OT_DISPLAY_NAME = "STG OpenTrace";
-				PRODUCT_BUNDLE_IDENTIFIER = "sg.gov.tech.opentrace-stg";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bvl.opentrace;
 				PRODUCT_NAME = OpenTrace;
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SERVICE_UUID = "A6BA4286-C550-4794-A888-9467EF0B31A8";
+				SERVICE_UUID = "b4c97a4c-8332-11ea-bc55-0242ac130003";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				V2_CHARACTERISTIC_ID = "D1034710-B11E-42F2-BCA3-F481177D5BB2";
+				V2_CHARACTERISTIC_ID = "979b3a80-8334-11ea-bc55-0242ac130003";
 			};
 			name = Debug;
 		};
@@ -909,13 +913,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5B9E9EDBFA7A442DC6067BF9 /* Pods-OpenTrace.release.xcconfig */;
 			buildSettings = {
-				BUNDLE_IDENTIFIER = "<insert bundle identifier here>";
+				BUNDLE_IDENTIFIER = com.bvl.opentrace;
 				CODE_SIGN_ENTITLEMENTS = "OpenTrace/Project Bluetrace.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 27;
-				DEVELOPMENT_TEAM = 4CYF853X55;
-				FIREBASE_STORAGE_URL = "<insert firebase storage url here>";
+				DEVELOPMENT_TEAM = 33X8PA8375;
+				FIREBASE_STORAGE_URL = "gs://opentrace-rs-upload";
 				INFOPLIST_FILE = "$(SRCROOT)/OpenTrace/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -924,14 +928,14 @@
 				);
 				MARKETING_VERSION = 1.5;
 				OT_DISPLAY_NAME = OpenTrace;
-				PRODUCT_BUNDLE_IDENTIFIER = sg.gov.tech.opentrace;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bvl.opentrace;
 				PRODUCT_NAME = OpenTrace;
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SERVICE_UUID = "A6BA4286-C550-4794-A888-9467EF0B31A8";
+				SERVICE_UUID = "b4c97a4c-8332-11ea-bc55-0242ac130003";
 				SWIFT_REFLECTION_METADATA_LEVEL = none;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				V2_CHARACTERISTIC_ID = "D1034710-B11E-42F2-BCA3-F481177D5BB2";
+				V2_CHARACTERISTIC_ID = "979b3a80-8334-11ea-bc55-0242ac130003";
 			};
 			name = Release;
 		};

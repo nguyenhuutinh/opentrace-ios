@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>666603500263-g73a01q4d37urmaqg1e3kubuvre5sh1r.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.666603500263-g73a01q4d37urmaqg1e3kubuvre5sh1r</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>666603500263-2484mfopef1heae2pc1bqjj31j2mtprm.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAPXR7x48xZZIooiEqP3sujjSU0f08qZ-g</string>
+	<key>GCM_SENDER_ID</key>
+	<string>666603500263</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.bvl.opentrace.stage</string>
+	<key>PROJECT_ID</key>
+	<string>opentrace-rs</string>
+	<key>STORAGE_BUCKET</key>
+	<string>opentrace-rs.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:666603500263:ios:40b62225132218bf4f6842</string>
+	<key>DATABASE_URL</key>
+	<string>https://opentrace-rs.firebaseio.com</string>
+</dict>
+</plist>

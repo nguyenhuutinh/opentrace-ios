@@ -29,9 +29,7 @@
 			<string>STG</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>&lt;staging</string>
-				<string>url</string>
-				<string>scheme&gt;</string>
+				<string>com.googleusercontent.apps.666603500263-g73a01q4d37urmaqg1e3kubuvre5sh1r</string>
 			</array>
 		</dict>
 		<dict>
@@ -41,9 +39,7 @@
 			<string>PROD</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>&lt;production</string>
-				<string>url</string>
-				<string>scheme&gt;</string>
+				<string>com.googleusercontent.apps.666603500263-l5kvm9not58l60548hpkfqt5donmbvqv</string>
 			</array>
 		</dict>
 		<dict>
